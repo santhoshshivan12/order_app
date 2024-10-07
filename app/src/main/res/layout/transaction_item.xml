@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/transaction_item_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/transactionIcon"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/baseline_check_circle_outline_24"
+        android:layout_gravity="center|center"
+        android:contentDescription="Transaction icon" />
+
+    <TextView
+        android:id="@+id/transactioncheckno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="-----"
+        android:textSize="25dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CDCCCA"
+        android:layout_marginTop="10dp"
+
+        android:layout_gravity="center"
+        android:id="@+id/table_row1"
+        />
+
+
+
+    <TextView
+        android:id="@+id/transactionuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="guest"
+        android:textSize="18dp"
+        />
+    <TextView
+        android:id="@+id/transactionAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="$00.00"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="center"
+
+        android:textSize="18sp"
+        />
+
+
+
+    <LinearLayout
+        android:id="@+id/transaction_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:background="#35C360"
+
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/transactionDate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:gravity="center"
+            android:text="2.00pm"
+            android:textSize="16sp"
+            />
+
+
+
+        <TextView
+            android:id="@+id/transactionorderno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+
+            android:layout_gravity="end"
+            android:text="0000"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

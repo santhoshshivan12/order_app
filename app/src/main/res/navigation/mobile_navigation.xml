@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.app1.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+
+        <action
+            android:id="@+id/action_nav_home_to_nav_oder"
+            app:destination="@id/nav_oder" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_transaction"
+            app:destination="@id/nav_transaction" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_oder"
+        android:name="com.example.app1.ui.oder.OrderFragment"
+        android:label="@string/oders"
+        tools:layout="@layout/fragment_oder">
+
+        <action
+            android:id="@+id/action_nav_oder_to_nav_home"
+            app:destination="@id/nav_home" />
+        <action
+            android:id="@+id/action_nav_oder_to_nav_transaction"
+            app:destination="@id/nav_transaction" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/nav_transaction"
+        android:name="com.example.app1.ui.transcation.TransactionFragment"
+        android:label="Transaction"
+        tools:layout="@layout/fragment_transaction2" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/nav_setting"
+        android:name="com.example.app1.SettingFragment"
+        android:label="Setting"
+        tools:layout="@layout/fragment_setting2" />
+    <fragment
+        android:id="@+id/additemFragment"
+        android:name="com.example.app1.ui.home.product.additemFragment"
+        android:label="additem"
+        tools:layout="@layout/fragment_additem" >
+
+        <action
+            android:id="@+id/action_additemFragment_to_nav_oder"
+            app:destination="@id/nav_oder" />
+    </fragment>
+</navigation>
